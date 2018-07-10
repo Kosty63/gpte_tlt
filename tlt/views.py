@@ -14,3 +14,7 @@ def index(request):
 
         new_form = form.save()
     return render(request, 'templatesGpteTlt/index.html', locals())
+
+
+def purchases(request):
+    return render(request, 'templatesGpteTlt/purchases.html', locals())
