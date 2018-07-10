@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 from tlt import views
 
 urlpatterns = [
-    url(r'^', views.index, name='index'),
-    url(r'^../purchases/$', views.purchases, name='purchases'),
+    url(r'^$', views.index, name='index'),
+    url(r'^purchases/$', views.purchases, name='purchases'),
+    url(r'^conctacts/$', views.conctacts, name='conctacts'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

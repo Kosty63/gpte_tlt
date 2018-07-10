@@ -18,3 +18,7 @@ def index(request):
 
 def purchases(request):
     return render(request, 'templatesGpteTlt/purchases.html', locals())
+
+
+def conctacts(request):
+    return render(request, 'templatesGpteTlt/contacts.html', locals())
