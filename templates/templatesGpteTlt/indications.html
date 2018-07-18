@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 style="text-align: center">Передача показаний приборов учетов</h1>
+
+    <form action="" method="post">{% csrf_token %}
+        <div class="form-group">
+            <label>Лицевой счет</label>
+            <input type="number" name="{{ form.ls.name }}" class="form-control"
+                   placeholder="Введите лицевой счет">
+            <label>ФИО</label>
+            <input type="text" name="{{ form.fullName.name }}" class="form-control"
+                   placeholder="Например: Иванов Иван Иванович" >
+            <label>Адрес</label>
+            <input id="address" type="text" name="{{ form.address.name }}" class="form-control"
+                   placeholder="Введите адрес:" size="100">
+            <label>Показания приборов учёта</label>
+            <input type="number" name="{{ form.firstCount.name }}" class="form-control"
+                   placeholder="56">
+            <label>Показания приборов учёта</label>
+            <input type="number" name="{{ form.twoCount.name }}" class="form-control"
+                   placeholder="Заполняется если у Вас более одного прибора учета">
+            <label>Показания приборов учёта</label>
+            <input type="number" name="{{ form.freeCount.name }}" class="form-control"
+                   placeholder="Заполняется если у Вас более двух приборов учета">
+            <label>Показания приборов учёта</label>
+            <input type="number" name="{{ form.forCount.name }}" class="form-control"
+                   placeholder="Заполняется если у Вас более трех приборов учета">
+        </div>
+        <div>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+        </div>
+    </form>
+
+{% endblock %}

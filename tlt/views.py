@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .forms import SubscriberForm
 
-
 def index(request):
     name = "Konstantin"
     form = SubscriberForm(request.POST or None)
@@ -22,3 +21,7 @@ def purchases(request):
 
 def conctacts(request):
     return render(request, 'templatesGpteTlt/contacts.html', locals())
+
+
+def tariff(request):
+    return render(request, 'templatesGpteTlt/tariff.html', locals())

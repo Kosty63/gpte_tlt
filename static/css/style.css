@@ -30,7 +30,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
-  color: #8b969c;
+  /*color: #8b969c;*/
+  color: #646769;
 }
 @media screen and (max-width: 768px) {
   body {
