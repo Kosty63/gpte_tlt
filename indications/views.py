@@ -18,5 +18,6 @@ def indications(request):
     form = IndicationsForm(request.POST or None)
     if request.method == "POST" and form.is_valid():
         new_form = form.save()
+        return render(request, 'templatesGpteTlt/indicationsOK.html', locals())
     return render(request, 'templatesGpteTlt/indications.html', locals())
 
