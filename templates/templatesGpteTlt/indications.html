@@ -3,13 +3,13 @@
 {% block content %}
 
     <h1 style="text-align: center">Передача показаний приборов учетов</h1>
-<h2 style="text-align: center;">Показания приборов учёта вы можете передать с 18 по 23 число.</h2>
+<!--<h2 style="text-align: center;">Показания приборов учёта вы можете передать с 18 по 23 число.</h2>-->
 
-    <!--<form action="" method="post">{% csrf_token %}
+    <form action="" method="post">{% csrf_token %}
         <div class="form-group">
             <label>Лицевой счет</label>
-            <input type="number" name="{{ form.ls.name }}" class="form-control"
-                   placeholder="Введите лицевой счет">
+            <input type="text" minlength="13" maxlength="13" name="{{ form.ls.name }}" class="form-control"
+                   placeholder="Введите лицевой счет состоящий из 13 чисел">
             <label>ФИО</label>
             <input type="text" name="{{ form.fullName.name }}" class="form-control"
                    placeholder="Например: Иванов Иван Иванович" >
@@ -32,6 +32,6 @@
         <div>
             <button class="btn btn-primary" type="submit">Отправить</button>
         </div>
-    </form>-->
+    </form>
 
 {% endblock %}
