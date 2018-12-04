@@ -3,9 +3,9 @@
 {% block content %}
 
     <h1 style="text-align: center">Передача показаний приборов учетов</h1>
-<h2 style="text-align: center;">Показания приборов учёта вы можете передать с 18 по 23 число.</h2>
+<!--<h2 style="text-align: center;">Показания приборов учёта вы можете передать с 18 по 23 число.</h2> -->
 
-<!--    <form action="" method="post">{% csrf_token %}
+<form action="" method="post">{% csrf_token %}
         <div class="form-group">
             <label>Лицевой счет</label>
             <input type="text" minlength="13" maxlength="13" name="{{ form.ls.name }}" class="form-control"
@@ -16,6 +16,8 @@
             <label>Адрес</label>
             <input id="address" type="text" name="{{ form.address.name }}" class="form-control"
                    placeholder="Введите адрес:" size="100">
+            <label>Период в котором будут учтены переданные показания</label>
+            <input type="text" name="{{ form.periud.name}}" id="periud" class="form-control" >
             <label>Показания приборов учёта</label>
             <input type="number" name="{{ form.firstCount.name }}" class="form-control"
                    placeholder="56">
@@ -32,6 +34,6 @@
         <div>
             <button class="btn btn-primary" type="submit">Отправить</button>
         </div>
-    </form>-->
+    </form>
 
 {% endblock %}
