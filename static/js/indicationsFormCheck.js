@@ -11,7 +11,7 @@
         inputPeriud.value = monthNames[date.getMonth()];
 
     }else {
-        if (date.getMonth() > 11){
+        if (date.getMonth() >= 11){
             inputPeriud.value = monthNames[0]
         }else {
         inputPeriud.value = monthNames[date.getMonth() + 1]
