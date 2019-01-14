@@ -18,10 +18,11 @@ def index(request):
 def purchases(request):
     return render(request, 'templatesGpteTlt/purchases.html', locals())
 
+def debt(request):
+    return render(request, 'templatesGpteTlt/debt.html', locals())
 
 def conctacts(request):
     return render(request, 'templatesGpteTlt/contacts.html', locals())
-
 
 def tariff(request):
     return render(request, 'templatesGpteTlt/tariff.html', locals())
