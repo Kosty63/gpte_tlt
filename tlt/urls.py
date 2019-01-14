@@ -22,6 +22,7 @@ from tlt import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^purchases/$', views.purchases, name='purchases'),
+    url(r'^debt/$', views.debt, name='debt'),
     url(r'^conctacts/$', views.conctacts, name='conctacts'),
     url(r'^tariff/$', views.tariff, name='tariff'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
