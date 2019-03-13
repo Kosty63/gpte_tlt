@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^debt/$', views.debt, name='debt'),
     url(r'^conctacts/$', views.conctacts, name='conctacts'),
     url(r'^tariff/$', views.tariff, name='tariff'),
+    url(r'^information/$', views.information, name='information'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
