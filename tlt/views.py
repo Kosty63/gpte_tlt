@@ -26,3 +26,6 @@ def conctacts(request):
 
 def tariff(request):
     return render(request, 'templatesGpteTlt/tariff.html', locals())
+
+def information(request):
+    return render(request, 'templatesGpteTlt/information.html', locals())
