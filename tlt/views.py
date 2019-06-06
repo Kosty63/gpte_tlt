@@ -29,3 +29,6 @@ def tariff(request):
 
 def information(request):
     return render(request, 'templatesGpteTlt/information.html', locals())
+
+def consumer(request):
+    return render(request, 'templatesGpteTlt/consumer.html', locals())
