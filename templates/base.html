@@ -28,6 +28,11 @@
     <link rel="stylesheet" href="{% static 'css/tableStyle.css' %}">
     	<!-- Modernizr JS -->
 	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	    <!--Slick -->
+    <link rel="stylesheet" href="{% static 'js/slick-1.8.1/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'js/slick-1.8.1/slick/slick-theme.css' %}">
+	
+	
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -42,6 +47,7 @@
     <![endif]-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/suggestions-jquery@18.3.3/dist/js/jquery.suggestions.min.js"></script>
     <script type="text/javascript">
+	    
     $("#address").suggestions({
         token: "bcd5f13984bd855d99edf609e1b6b4e6fef61b16",
         type: "ADDRESS",
@@ -52,6 +58,8 @@
         }
     });
     </script>
+	
+<script src="{% static 'js/slick-1.8.1/slick/slick.min.js' %}"></script>
 
 
 </head>
